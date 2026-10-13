@@ -1,0 +1,8 @@
+# Rosalind: Complementing a Strand of DNA
+# Finds the reverse complement of a DNA string
+
+dna = "AAAACCCGGT"
+complement_map = {"A": "T", "T": "A", "C": "G", "G": "C"}
+complement = "".join(complement_map[base] for base in dna)
+reverse_complement = complement[::-1]
+print(reverse_complement)
